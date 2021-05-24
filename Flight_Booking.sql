@@ -1,3 +1,6 @@
+FLIGHT BOOKING
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 CREATE OR REPLACE PROCEDURE FMDB(F_id FLIGHTS_TEAM1.FLIGHT_ID%TYPE,Pass_name BOOKINGS_TEAM1.Pass_Name%TYPE,
 GENDER BOOKINGS_TEAM1.GENDER%TYPE,AGE BOOKINGS_TEAM1.AGE%TYPE,PHONE BOOKINGS_TEAM1.PHONE_NUMBER%TYPE)
 
@@ -48,10 +51,8 @@ EXEC FMDB('&FLIGHT_ID','&Pass_Name','&Gender',&Age,&Phone_number);
 
 
 
-
-
 SEQUENCE_CREATION
-------------------------
+--------------------------------------------------------------------------------------------------------------------------------
 SELECT FSEQ.NEXTVAL
 FROM dual;
 
